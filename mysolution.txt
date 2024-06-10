@@ -1,0 +1,26 @@
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+
+mkdir periodic_table
+cd periodic_table
+git init
+git checkout -b main
+git commit -m "Initial commit"
+
+touch element.sh
+chmod +x element.sh
+touch fix_database.sh
+chmod +x fix_database.sh
+
+git commit --amend #to make initial commit#
+git add .
+git commit -m "Add prompt"
+git add .
+git commit -m "feat: Add skeleton"
+git add .
+git commit -m "feat: Get data by full name"
+git add .
+git commit -m "feat: Get data by full name"
+git add .
+git commit -m "feat: Get data by atomic symbol"
+git add .
+git commit -m "feat: Get data by atomic number" 
